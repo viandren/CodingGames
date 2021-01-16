@@ -11,7 +11,7 @@ package hu.viandren.coding_games.euler.F11_F20;
  */
 public class F11 {
 
-  public static void f11() {
+  public static void run() {
 
 
     final String gridstr = "08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08\n"
