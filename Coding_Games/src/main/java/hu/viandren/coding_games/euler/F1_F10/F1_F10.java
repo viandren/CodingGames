@@ -6,6 +6,8 @@
 package hu.viandren.coding_games.euler.F1_F10;
 
 import static hu.viandren.coding_games.Utils.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class F1_F10 {
 
@@ -164,4 +166,31 @@ public class F1_F10 {
     System.out.println(a * b * c);
   }
 
+  public static void f10() {
+    long sum;
+    final int number = 2000000;
+    double rootNum = Math.sqrt(number);
+    List<Long> primesUnderRoot = new ArrayList<>();
+
+    for (long i = 2; i < rootNum; i++) {
+      if (IsPrime(i)) {
+        primesUnderRoot.add(i);
+      }
+    }
+    List<Long> allPrimes = new ArrayList<>(primesUnderRoot);
+    for (long i = Math.round(rootNum); i < number; i++) {
+      boolean thisIsPrime = true;
+      for (Long prime : primesUnderRoot) {
+        if (i % prime == 0) {
+          thisIsPrime = false;
+          break;
+        }
+      }
+      if (thisIsPrime) {
+        allPrimes.add(i);
+      }
+    }
+    sum = allPrimes.stream().mapToLong(Long::longValue).sum();
+    System.out.println(sum);
+  }
 }

@@ -10,7 +10,7 @@ public class Utils {
   public static boolean IsPrime(long num) {
 
     int j = 2;
-    while (j < num / 2) {
+    while (j <= num / 2) {
       if (num % j == 0) {
         return false;
       }
