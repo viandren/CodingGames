@@ -19,4 +19,13 @@ public class Utils {
     return true;
   }
 
+  public static long reverseNumber(long num) {
+    String nstr = String.valueOf(num);
+    StringBuilder sb = new StringBuilder();
+    for (int i = nstr.length() - 1; i >= 0; i--) {
+      sb.append(nstr.charAt(i));
+    }
+    return Integer.parseInt(sb.toString());
+  }
+
 }
