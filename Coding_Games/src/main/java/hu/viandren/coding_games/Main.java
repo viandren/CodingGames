@@ -21,7 +21,8 @@ public class Main {
 //    F1_F10.f3();
 //    F1_F10.f4();
 //    F1_F10.f5();
-    F1_F10.f6();
+//    F1_F10.f6();
+    F1_F10.f7();
 
     System.out.println("Eltelt idő: " + (System.currentTimeMillis() - before) + "ms");
 

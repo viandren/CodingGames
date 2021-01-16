@@ -128,4 +128,16 @@ public class F1_F10 {
     ered = sum * sum - sumsq;
     System.out.println(ered);
   }
+
+  public static void f7() {
+    int cnt = 6;
+    long num = 13;
+    while (cnt < 10001) {
+      num++;
+      if (IsPrime(num)) {
+        cnt++;
+      }
+    }
+    System.out.println(num);
+  }
 }
