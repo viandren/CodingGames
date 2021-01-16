@@ -5,7 +5,7 @@
  */
 package hu.viandren.coding_games;
 
-import hu.viandren.coding_games.euler.F1_F10.F1_F10;
+import hu.viandren.coding_games.euler.F11_F20.F11;
 
 public class Main {
   public static void main(String[] args) {
@@ -21,7 +21,8 @@ public class Main {
 //    F1_F10.f7();
 //    F1_F10.f8();
 //    F1_F10.f9();
-    F1_F10.f10();
+//    F1_F10.f10();
+    F11.f11();
 
     System.out.println("Eltelt idő: " + (System.currentTimeMillis() - before) + "ms");
 
