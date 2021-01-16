@@ -5,10 +5,6 @@
  */
 package hu.viandren.coding_games;
 
-/**
- *
- * @author FrontSoft
- */
 public class Utils {
 
   public static boolean IsPrime(long num) {
